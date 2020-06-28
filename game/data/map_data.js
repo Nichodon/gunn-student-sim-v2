@@ -78,7 +78,7 @@ var MAP_DATA = {
   "livingroom": {
     doors: {
       0x00ffcc: ["hallway", 4, 97],
-      0x00ccff: ["house", 119, 455]
+      0x00ccff: ["nbuilding", 119, 455]
     },
     actions: {
       0x00ffff: {
@@ -123,6 +123,26 @@ var MAP_DATA = {
     }
   },
   "hallway": {
+    doors: {
+      0xff0000: ["bedroom", 135, 175],
+      0x00ff00: ["livingroom", 313, 209]
+    },
+    actions: {
+      0xffff00: {
+        dir: [1],
+        responses: [
+          ["The bathroom door is locked."]
+        ]
+      },
+      0x00ffff: {
+        dir: [1],
+        responses: [
+          ["You resonate deeply with this painting."]
+        ]
+      }
+    }
+  },
+  "nbuilding": {
     doors: {
       0xff0000: ["bedroom", 135, 175],
       0x00ff00: ["livingroom", 313, 209]
